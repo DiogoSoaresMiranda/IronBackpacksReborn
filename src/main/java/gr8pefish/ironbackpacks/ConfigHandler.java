@@ -1,5 +1,6 @@
 package gr8pefish.ironbackpacks;
 
+import gr8pefish.ironbackpacks.ConfigHandler;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -43,33 +44,22 @@ public class ConfigHandler {
     }
 
     public static class BackpackSizes {
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the basic backpack"} )
-        public int sizeBasic = 18;
+        @Config.RangeInt(min = 1, max = 12)
+        @Config.Comment({ "Number of line of the Basic Backpack"} )
+        public int sizeBasic = 2;
 
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the iron backpack - storage emphasis"} )
-        public int sizeIronStorage = 36;
+        @Config.RangeInt(min = 1, max = 12)
+        @Config.Comment({ "Number of line of the Iron Backpack"} )
+        public int sizeIronStorage = 4;
 
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the iron backpack - upgrade emphasis"} )
-        public int sizeIronUpgrade = 27;
+        @Config.RangeInt(min = 1, max = 12)
+        @Config.Comment({ "Number of line of the Gold Backpack"} )
+        public int sizeGoldStorage = 6;
 
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the iron backpack - storage emphasis"} )
-        public int sizeGoldStorage = 45;
+        @Config.RangeInt(min = 1, max = 12)
+        @Config.Comment({ "Number of line of the Diamond Backpack"} )
+        public int sizeDiamondStorage = 8;
 
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the iron backpack - upgrade emphasis"} )
-        public int sizeGoldUpgrade = 36;
-
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the iron backpack - storage emphasis"} )
-        public int sizeDiamondStorage = 54;
-
-        @Config.RangeInt(min = 1, max = 54)
-        @Config.Comment({ "Size of the iron backpack - upgrade emphasis"} )
-        public int sizeDiamondUpgrade = 45;
     }
 
 }
