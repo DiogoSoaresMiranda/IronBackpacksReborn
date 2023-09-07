@@ -44,21 +44,38 @@ public class ConfigHandler {
     }
 
     public static class BackpackSizes {
-        @Config.RangeInt(min = 1, max = 12)
-        @Config.Comment({ "Number of line of the Basic Backpack"} )
-        public int sizeBasic = 2;
+        @Config.RangeInt(min = 1, max = 7)
+        @Config.Comment({ "Number of Lines of the Basic Backpack"} )
+        public int sizeLineBasic = 1;
 
-        @Config.RangeInt(min = 1, max = 12)
-        @Config.Comment({ "Number of line of the Iron Backpack"} )
-        public int sizeIronStorage = 4;
+        @Config.RangeInt(min = 1, max = 7)
+        @Config.Comment({ "Number of Lines of the Iron Backpack"} )
+        public int sizeLineIronStorage = 2;
 
-        @Config.RangeInt(min = 1, max = 12)
-        @Config.Comment({ "Number of line of the Gold Backpack"} )
-        public int sizeGoldStorage = 6;
+        @Config.RangeInt(min = 1, max = 7)
+        @Config.Comment({ "Number of Lines of the Gold Backpack"} )
+        public int sizeLineGoldStorage = 3;
 
-        @Config.RangeInt(min = 1, max = 12)
-        @Config.Comment({ "Number of line of the Diamond Backpack"} )
-        public int sizeDiamondStorage = 8;
+        @Config.RangeInt(min = 1, max = 7)
+        @Config.Comment({ "Number of Lines of the Diamond Backpack"} )
+        public int sizeLineDiamondStorage = 4;
+
+        @Config.RangeInt(min = 1, max = 17)
+        @Config.Comment({ "Number of Columns of the Basic Backpack"} )
+        public int sizeColumnBasic = 6;
+
+        @Config.RangeInt(min = 1, max = 17)
+        @Config.Comment({ "Number of Columns of the Iron Backpack"} )
+        public int sizeColumnIronStorage = 8;
+
+        @Config.RangeInt(min = 1, max = 17)
+        @Config.Comment({ "Number of Columns of the Gold Backpack"} )
+        public int sizeColumnGoldStorage = 9;
+
+        @Config.RangeInt(min = 1, max = 17)
+        @Config.Comment({ "Number of Columns of the Diamond Backpack"} )
+        public int sizeColumnDiamondStorage = 12;
+
 
     }
 

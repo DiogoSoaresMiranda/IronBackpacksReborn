@@ -84,10 +84,10 @@ public class RegistrarIronBackpacks {
     public static void registerBackpacks(RegistryEvent.Register<BackpackType> event) {
         event.getRegistry().register(new BackpackType(IronBackpacksAPI.NULL, 0, 0, false, BackpackSize.MIN));
 
-        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "basic"), 0, 4, false, 9, ConfigHandler.sizes.sizeBasic));
-        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "iron"), 1, 7, true, 9, ConfigHandler.sizes.sizeIronStorage));
-        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "gold"), 2, 12, true, 9, ConfigHandler.sizes.sizeGoldStorage));
-        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "diamond"), 3, 18, true, 9, ConfigHandler.sizes.sizeDiamondStorage));
+        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "basic"), 0, 4, false, ConfigHandler.sizes.sizeColumnBasic, ConfigHandler.sizes.sizeLineBasic));
+        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "iron"), 1, 7, true, ConfigHandler.sizes.sizeColumnIronStorage, ConfigHandler.sizes.sizeLineIronStorage));
+        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "gold"), 2, 12, true, ConfigHandler.sizes.sizeColumnGoldStorage, ConfigHandler.sizes.sizeLineGoldStorage));
+        event.getRegistry().register(new BackpackType(new ResourceLocation(IronBackpacks.MODID, "diamond"), 3, 18, true, ConfigHandler.sizes.sizeColumnDiamondStorage, ConfigHandler.sizes.sizeLineDiamondStorage));
     }
 
     @SubscribeEvent
